@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#btn1").click(function(){
+        $("li").first().hide();
+    });
+    $("#btn2").click(function(){
+        $("li").eq(1).hide();
+    });
+    $("#btn3").click(function(){
+        $("li").filter(".special").hide();
+    });
+});
+</script>
+</head>
+<body>
+
+<div>
+<ul>
+<li><p>Hide Paragraph 1</p></li>
+<li><p>Hide Paragraph 2</p></li>
+<li class="special"><p>Hide Paragraph 3</p></li>
+</ul>
+
+</div>
+
+<button id="btn1">Hide P1</button>
+<button id="btn2">Hide P2</button>
+<button id="btn3">Hide P3</button>
+
+</body>
+</html>
